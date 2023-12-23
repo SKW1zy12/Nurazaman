@@ -1,5 +1,6 @@
 from django.db import models
 from ckeditor.fields import RichTextField
+from apps.secondary.models import Kvartal
 
 # Create your models here.
 class Settings(models.Model):
@@ -73,5 +74,19 @@ class About(models.Model):
     class Meta:
         verbose_name = 'O нас'
         verbose_name_plural = "О нас"
+
+
+
+class SettingsPlace(models.Model):
+    kvartal = models.ForeignKey(Kvartal, related_name='place_kvartal' , on_delete=models.CASCADE)
+    place = models.CharField(
+        max_length = 255,
+        verbose_name = 'Места в комплексе'
+    )
+    class Meta:
+        unique_together = ('kvartal', 'place')
+        
+
+
 
 

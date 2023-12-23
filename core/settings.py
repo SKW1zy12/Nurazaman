@@ -181,6 +181,8 @@ JAZZMIN_UI_TWEAKS = {
     #"theme": "slate",    # темный (серьезный , полностью)
 
 }
+
+# Ckeditor
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'  # URL to jQuery
 CKEDITOR_IMAGE_BACKEND = "pillow"  # Путь к пакету Pillow для обработки изображений
@@ -196,18 +198,7 @@ CKEDITOR_CONFIGS = {
 EMAIL_USE_TLS = True  # Использовать TLS для защищенного соединения
 EMAIL_HOST = 'smtp.gmail.com'  # Адрес SMTP сервера Gmail
 EMAIL_PORT = 587  # Порт для подключения к SMTP серверу Gmail
-EMAIL_HOST_USER = 'nuraj9663@gmail.com'
-EMAIL_HOST_PASSWORD = 'ваш пароль'
+EMAIL_HOST_USER = 'a7740915@gmail.com'
+EMAIL_HOST_PASSWORD = 'qhrf touh bufd teyw'
 
 
-# Ckeditor
-CKEDITOR_UPLOAD_PATH = "uploads/"
-CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'  # URL to jQuery
-CKEDITOR_IMAGE_BACKEND = "pillow"  # Путь к пакету Pillow для обработки изображений
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': 'Custom',  # Вы можете настроить свою собственную панель инструментов CKEditor
-        'height': 300,
-        'width': 800,
-    },
-}
